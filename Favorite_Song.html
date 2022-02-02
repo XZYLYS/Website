@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="PROFILE1.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Songs</title>
+    <style>
+    body{
+        background-color: #012c3f;
+        font-family: 'Montserrat', sans-serif;
+        color: #000000;
+    }
+    #PROFILE {
+        float:none;
+        border: none;
+        border-radius: 200px;
+        width: 15%;
+        margin: 10px 0 0 120px;
+    }
+    #back-to-home{
+        height: 60px;
+        width: 60px;
+        border-radius: 100%;
+        padding: 0px;
+        margin: 0 0 130px 43px;
+        border: 0px;
+    }
+    #back-to-home:hover{
+        filter: drop-shadow(1px 1px 5px  #91c1ff);
+    }
+    .playlist{
+        display: flex;
+        flex-direction: row;
+        margin: 0 50px 0 50px;
+        justify-content: center;
+
+    }
+    .Title,.control,.author{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .Title>span{
+        border-left:#feb14a solid 3px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    .author>span{
+        border-right:#feb14a solid 3px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    audio, span{
+        margin: 15px 0 15px 0 ;
+        padding: 0 150px 0 150px;
+        background-color: rgb(241, 240, 240);
+        border-top:#feb14a solid 3px;
+        border-bottom:#feb14a solid 3px;
+        
+    }
+    span{
+        padding-top: 17.6px;
+        padding-bottom: 18px;
+    }
+    h1{
+        text-align: center;
+        color: #e0522f;
+        font-family: 'Amiri', serif;
+        font-size: 100px;
+        margin-left: 100px;
+        margin-top: -170px;
+        margin-bottom: 30px;
+    }
+    p{
+        text-align: right;
+        color: gray;
+        font-size: 13px;
+    }
+    
+    </style>
+</head>
+<body>
+    <a href="HOME.html"><img id="back-to-home" src="Back.png"></img></a>
+    <img id="PROFILE"src="PROFILE1.png">
+    <h1>Favorite Songs</h1>
+    <div class="playlist">
+        <div class="Title"> 
+            <span>1. Paraluman</span>
+            <span>2. Tahanan</span>
+            <span>3. Tulog na</span>
+            <span>4. Pagsamo</span>
+            <span>5. Higa</span>
+        </div>
+        <div class="control">
+            <audio controls>
+                <source src="Paraluman.mp3" type="audio/mpeg">
+            </audio>
+            <audio controls>
+                <source src="Tahanan.mp3" type="audio/mpeg">
+            </audio>
+            <audio controls>
+                <source src="Tulog Na.mp3" type="audio/mpeg">
+            </audio>
+            <audio controls>
+                <source src="Pagsamo.mp3" type="audio/mpeg">
+            </audio>
+            <audio controls>
+                <source src="Higa.mp3" type="audio/mpeg">
+            </audio></div>
+        <div class="author">
+            <span>Adie</span>
+            <span>Adie</span>
+            <span>Sabu</span>
+            <span> Arthur Nery</span>
+            <span>Arthur Nery</span>
+        </div>
+    </div>
+    <p>©John P. Estrada, DICT 2-2 2021</p>
+</body>
+</html>

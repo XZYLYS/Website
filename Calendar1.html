@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="PROFILE1.png">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Schedule</title>
+    <style>
+
+    /*For over all */
+    body{
+        color: #e0522f;
+        background-color:#012c3f;
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+    body> p{
+        text-align: right;
+        color: gray;
+        font-size: 13px;
+    }
+
+    /*The calneder box*/
+    .calendar{
+        display: flex;
+        flex-direction: column;
+        margin: 0px 150px 50px 150px;
+        border: 2px solid #feb14a;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom: none;
+    }
+    /* all calendar divs*/
+    .calendar> div{
+        background-color:#06212c;   
+        
+    }
+    /* days of weeek start Time Monday Tuesday Wednesday etc*/
+        .days-of-week{
+            display: flex;
+            justify-content: space-between;   
+            border-radius: 10px 10px 0px 0px;
+            align-items: center;
+            padding: 10px 0px 10px 0px;
+            border-bottom:#feb14a solid 2px;
+        }
+        /* Font */
+        .days-of-week > span {
+            
+            margin: 2px;
+            border-radius: 10px;
+            text-align: center;
+            flex: 1;
+            color: #feb14a;
+            background-color: #204652;
+            border: 2px solid #feb14a;
+            font-family: 'Lato', sans-serif;
+            font-size: 20px;
+        }
+        .days-of-week > span:hover{
+            background-color: #005e7a;
+        }
+    /* days of weeek end */
+
+
+
+    .Subject-Schedule{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        height: 924px;
+
+    }
+    .Subject-Schedule > div{
+        display: flex;
+        flex-direction: column;
+        flex: 1px; 
+
+    }
+    .Subject-Schedule >div > span{
+        color: #feb14a;
+        font-family: 'Lato', sans-serif;
+        border-bottom:#feb14a solid 2px;
+        line-height: 40px;
+    }
+    .Times{
+        font-size: 12px;
+        border-right:#feb14a solid 2px;
+        height: 924px;
+    }
+
+    /*TAPOS NA WAG PALITAN*/
+    .title{
+        background-color: #06212c;
+        margin:15px 350px 50px 350px;
+        padding: 20px 0 20px 0;
+        border: 1px solid #082936;
+        border-radius: 20px ;
+    }
+        h1{
+        font-size: 60px;
+        text-align: center;
+        margin: 0;
+    }
+    p{
+        font-size: 30px;
+        text-align: center;
+        color: white;
+        margin: 0px;
+    }
+    /*CLOSE*/
+
+   .Subjects{
+    
+    color: white;
+    border-bottom: #feb14a solid 2px;
+    line-height: 20px;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+   }
+   .Subjects> p{
+    padding-top: 20px;
+    color: white;
+    line-height: 15px;
+    font-family: 'Lato', sans-serif;
+    font-size: 10px;
+   }
+   .Subjects:hover{
+    color: black;
+    background-color: white;
+    cursor: pointer;
+   }
+   
+   #BUMA{
+    padding: 60px 0px 60px 0px;
+   }
+   #INTE{
+    padding: 18px 0px 18px 0px;
+   }
+   #INTE1{
+    padding: 18px 0px 18px 0px;
+    border-left: #feb14a solid 2px; 
+    border-right: #feb14a solid 2px;  
+   }
+   #PHED{
+    padding: 28px 0px 28px 0px;  
+   }
+   #PROG{
+    padding: 28px 0px 28px 0px; 
+    border-left: #feb14a solid 2px; 
+    border-right: #feb14a solid 2px;  
+   }
+   #COMP1{
+    padding: 164px 0px 164px 0px; 
+    border-right: #feb14a solid 2px; 
+   }
+   #COMP2{
+    padding: 164px 0px 164px 0px;   
+    border-right: #feb14a solid 2px; 
+   }
+   #COMP2a{
+    padding: 154px 0px 154px 0px; 
+    border-right: #feb14a solid 2px; 
+   }
+   #COMP3{
+    padding: 144px 0px 144px 0px;  
+   }
+   #Tuesday{
+    padding: 451px 0px 451px 0px;
+    align-self: center;
+    border-left: #feb14a solid 2px; 
+    border-right: #feb14a solid 2px; 
+   }
+   #Sunday{
+    padding: 451px 0px 451px 0px;
+    align-self: center;
+    border-left: #feb14a solid 2px; 
+   }
+   #Monday{
+        height: 924px;
+   }
+   #back-to-home{
+        height: 60px;
+        width: 60px;
+        border-radius: 100%;
+        padding: 0;
+        margin: 50px 0 -80px 43px;
+        border: 0;
+    }
+    #back-to-home:hover{
+        filter: drop-shadow(1px 1px 5px  #91c1ff);
+    }
+    </style>
+</head>
+<body>
+    <a href="HOME.html"><img id="back-to-home" src="Back.png"></img></a>
+    <div class="title">
+    <p>DICT 2-2</p>
+    <h1>SCHEDULE</h1>
+    <p>First Semester</p>
+    </div>
+    <div class="calendar">
+        <!--done here wag galawin-->
+        <div class="days-of-week">
+            <span class="day-block">Time</span>
+            <span class="day-block">Monday</span>
+            <span class="day-block">Tuesday</span>
+            <span class="day-block">Wednesday</span>
+            <span class="day-block">Thursday</span>
+            <span class="day-block">Friday</span>
+            <span class="day-block">Saturday</span>
+            <span class="day-block">Sunday</span>
+        </div>
+        <div class="Subject-Schedule">
+            <!--We need 7 more of this -->
+
+            <!--Time1-->
+            <div class="Times">
+                <span class="day-block">7:30 AM - 8:00 AM</span>
+                <span class="day-block">8:00 AM - 8:30 AM</span>
+                <span class="day-block">8:30 AM - 9:00 AM</span>
+                <span class="day-block">9:00 AM - 9:30 AM</span>
+                <span class="day-block">9:30 AM - 10:00 AM</span>
+                <span class="day-block">10:00 AM - 10:30 AM</span>
+                <span class="day-block">10:30 AM - 11:00 AM</span>
+                <span class="day-block">11:00 AM - 11:30 AM</span>
+                <span class="day-block">11:30 AM - 12:00 PM</span>
+                <span class="day-block">12:00 PM - 12:30 PM</span>
+                <span class="day-block">12:30 PM - 1:00 PM</span>
+                <span class="day-block">1:00 PM - 1:30 PM</span>
+                <span class="day-block">1:30 PM - 2:00 PM</span>
+                <span class="day-block">2:00 PM - 2:30 PM</span>
+                <span class="day-block">2:30 PM - 3:00 PM</span>
+                <span class="day-block">3:00 PM - 3:30 PM</span>
+                <span class="day-block">3:30 PM - 4:00 PM</span>
+                <span class="day-block">4:00 PM - 4:30 PM</span>
+                <span class="day-block">4:30 PM - 5:00 PM</span>
+                <span class="day-block">5:00 PM - 5:30 PM</span>
+                <span class="day-block">5:30 PM - 6:00 PM</span>
+                <span class="day-block">6:00 PM - 6:30 PM</span>
+            </div>
+            <!--Monday-->
+            <div class="Monday">
+                <span >&nbsp;</span>
+                <span id="8">&nbsp;</span>
+                <span >&nbsp;</span>
+                <span id="9">&nbsp;</span>
+                <span >&nbsp;</span>
+                <span id="10">&nbsp;</span>
+                <div class="Subjects" id="BUMA">BUMA 20063 <br>Principle of<br>Management and<br>Organizatio <p> Bien, Maria Azalea <br>10:30 AM - 1:30 PM</p></div>
+                <div class="Subjects" id="INTE">INTE 30163 <br>Integrative<br>Programming and<br>Technologies<p> Lipardo, Junilyn <br>1:30 PM - 3:30 PM</p></div>
+                <span >&nbsp;</span>
+                <span id="4">&nbsp;</span>
+                <div class="Subjects" id="PHED">PHED 10032 <br>Individual/Dual<br>Combative Sports<p> Reyes,Jestoni<br> 4:30 PM - 6:30 PM</p></div>
+            </div>
+            <!--Tuesday-->
+            <div class="Subjects" id="Tuesday">
+                No Classes
+            </div>
+            <!--WedneSDAY-->
+            <div class="Wednesday">
+                <div class="Subjects" id="COMP1">COMP 20103 <br>Operating Systems<p> Atencio, Mylo<br> 7:30 AM - 12:30 PM</p></div>
+                <span >&nbsp;</span>
+                <span id="1">&nbsp;</span>
+                <span >&nbsp;</span>
+                <span id="2">&nbsp;</span>
+                <span >&nbsp;</span>
+                <span id="3">&nbsp;</span>
+                <span >&nbsp;</span>
+                <span id="4">&nbsp;</span>
+                <span >&nbsp;</span>
+                <span id="5">&nbsp;</span>
+                <span >&nbsp;</span>
+                <span id="6">&nbsp;</span>
+            </div>
+            <!--Thursday-->
+            <div class="Thursday">
+                <div class="Subjects" id="COMP2a">COMP 40013 <br>Project Management<p> Lipardo Jr., Fernando<br> 7:30 AM - 12:30 PM</p></div>
+                <span >&nbsp;</span>
+                <span id="1">&nbsp;</span>
+                <div class="Subjects" id="INTE1">INTE 30163 <br>Integrative<br>Programming and<br>Technologies<p> Lipardo, Junilyn 1:30 PM - 3:30 PM</p></div>
+                <span >&nbsp;</span>
+                <span id="4">&nbsp;</span>
+                <div class="Subjects" id="PROG">COMP 20263 <br>Computer<br>Programming 3<p> Macapagal, Diana<br> 4:30 PM - 6:30 PM</p></div>
+            </div>
+            <!--Friday-->
+            <div class="Friday">
+                <div class="Subjects" id="COMP2a">COMP 20063<br>Data Structures<br>and Algorithms<p>Atencio, Mylo<br> 7:30 AM - 12:30 PM</p></div>
+                <span >&nbsp;</span>
+                <span id="1">&nbsp;</span>
+                <span >&nbsp;</span>
+                <span id="2">&nbsp;</span>
+                <span >&nbsp;</span>
+                <span id="3">&nbsp;</span>
+                <span >&nbsp;</span>
+                <span id="4">&nbsp;</span>
+                <span >&nbsp;</span>
+                <span id="5">&nbsp;</span>
+                <span >&nbsp;</span>
+                <span id="6">&nbsp;</span>
+            </div>
+            <!--Saturday-->
+            <div class="Saturday">
+                <div class="Subjects" id="COMP3">COMP 20173 <br>Data<br>Communication<br>and Networking<p> Dazon Kenneh<br> 7:30 AM - 12:30 PM</p></div>
+                <span >&nbsp;</span>
+                <span id="1">&nbsp;</span>
+                <span >&nbsp;</span>
+                <span id="2">&nbsp;</span>
+                <span >&nbsp;</span>
+                <span id="3">&nbsp;</span>
+                <span >&nbsp;</span>
+                <span id="4">&nbsp;</span>
+                <span >&nbsp;</span>
+                <span id="5">&nbsp;</span>
+                <span >&nbsp;</span>
+                <span id="6">&nbsp;</span>
+            </div>
+            <!--Sunday-->
+            <div class="Subjects" id="Sunday">
+                No Classes
+            </div>
+        </div>
+    </div>
+    <p>©John P. Estrada, DICT 2-2 2021</p>
+</body>
+</html>
